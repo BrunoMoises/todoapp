@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TODOApp</string>
+    <string name="urgent_key">Urgente</string>
+    <string name="type_task">Digite uma tarefa...</string>
+    <string name="urgent">[Urgente]: %s</string>
+    <string name="not_urgent">[Não Urgente]: %s</string>
+</resources>

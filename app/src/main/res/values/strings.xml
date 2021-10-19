@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TODOApp</string>
+    <string name="urgent_key">Urgent</string>
+    <string name="type_task">Type a task...</string>
+    <string name="urgent">[Urgent]: %s</string>
+    <string name="not_urgent">[Not Urgent]: %s</string>
+</resources>
