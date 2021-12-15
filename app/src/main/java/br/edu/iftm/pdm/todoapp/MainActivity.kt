@@ -9,13 +9,11 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     private var etxtTarefa: EditText? = null
-    private var txtHistory: TextView? = null
     private var swtUrgent: Switch? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         this.etxtTarefa = findViewById(R.id.etxtTarefa)
-        this.txtHistory = findViewById(R.id.txtHistory)
         this.swtUrgent = findViewById(R.id.swtUrgent)
     }
 
@@ -27,7 +25,6 @@ class MainActivity : AppCompatActivity() {
             } else {
                 this.txtHistory?.append(getString(R.string.not_urgent, valueStr))
             }
-            this.txtHistory?.append("\n")
             this.etxtTarefa?.setText("")
         }
     }
