@@ -5,4 +5,6 @@
     <string name="type_task">Digite uma tarefa...</string>
     <string name="urgent">[Urgente]: %s</string>
     <string name="not_urgent">[Não Urgente]: %s</string>
+    <string name="check_tasks">Mostrar tarefas não concluidas</string>
+    <string name="done_check">Concluida</string>
 </resources>
