@@ -8,17 +8,20 @@ import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.Switch
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var etxtTarefa: EditText
     private lateinit var swtUrgent: Switch
-    private lateinit var lnvTaskList: LinearLayout
+    private lateinit var rv_task_list: RecyclerView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         this.etxtTarefa = findViewById(R.id.etxtTarefa)
         this.swtUrgent = findViewById(R.id.swtUrgent)
-        this.lnvTaskList = findViewById(R.id.lnvTaskList)
+        this.rv_task_list = findViewById(R.id.rv_task_list)
+
+        val mAdapter: MyAdapter = MyAdapter()
     }
 
     fun onClickSend(v: View) {
@@ -32,6 +35,7 @@ class MainActivity : AppCompatActivity() {
             } else {
                 txtBackground.setBackgroundColor(Color.GREEN)
             }
+
             this.lnvTaskList.addView(itemView)
             this.etxtTarefa.setText("")
         }
